@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
-app.use('/api/', index);
+app.use('/api', tasks);
 
 app.listen(port, function(){
   console.log('Server started on port '+port);
